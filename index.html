@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facultad de Ciencias Sociales - Programa Académico</title>
+    <meta name="description" content="Facultad de Ciencias Sociales de la Universidad Continental. Ofrecemos programas en Trabajo Social, Sociología y Antropología.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip link para lectores de pantalla -->
+    <a href="#main-content" class="visually-hidden-focusable">Saltar al contenido principal</a>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Ciencias Sociales</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Nosotros.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Programas.html">Programas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrusel de imágenes -->
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/la-mejor-universidad-de-cusco-segun-sunedu-universidad-continental-4.jpg" class="d-block w-100" alt="Vista del campus universitario con edificios modernos y áreas verdes">
+                <div class="carousel-caption">
+                    <h1>Bienvenidos a la Facultad de Ciencias Sociales</h1>
+                    <p>Descubre nuestro nuevo programa académico</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/Hub-de-Informacion-suspende-servicios.jpg" class="d-block w-100" alt="Biblioteca universitaria con estantes llenos de libros y estudiantes trabajando">
+                <div class="carousel-caption">
+                    <h1>Recursos de Investigación</h1>
+                    <p>Acceso a bibliotecas especializadas</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev" aria-label="Diapositiva anterior">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next" aria-label="Diapositiva siguiente">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+
+    <!-- Sección de programas -->
+    <main id="main-content" class="container my-5">
+        <h2 class="text-center mb-4">Nuestros Programas</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="img/Trabajo-social-1.jpg" class="card-img-top" alt="Estudiante de trabajo social ayudando a una persona mayor">
+                    <div class="card-body">
+                        <h3 class="card-title">Trabajo Social</h3>
+                        <p class="card-text">Formación integral para profesionales que transforman comunidades.</p>
+                        <a href="Programas.html" class="btn btn-primary">Más información <span class="visually-hidden">sobre Trabajo Social</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="img/unknown-120.jpeg" class="card-img-top" alt="Grupo de estudiantes de sociología analizando datos">
+                    <div class="card-body">
+                        <h3 class="card-title">Sociología</h3>
+                        <p class="card-text">Estudio de las estructuras sociales y su impacto en la sociedad.</p>
+                        <a href="Programas.html" class="btn btn-primary">Más información <span class="visually-hidden">sobre Sociología</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="img/Brockhaus_and_Efron_Encyclopedic_Dictionary_b1_218-0.jpg" class="card-img-top" alt="Antropólogos estudiando artefactos culturales">
+                    <div class="card-body">
+                        <h3 class="card-title">Antropología</h3>
+                        <p class="card-text">Exploración de las culturas humanas y su diversidad.</p>
+                        <a href="Programas.html" class="btn btn-primary">Más información <span class="visually-hidden">sobre Antropología</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Sección de contacto -->
+    <section class="bg-light py-5" aria-labelledby="contact-heading">
+        <div class="container">
+            <h2 id="contact-heading" class="text-center mb-4">Contáctanos</h2>
+            <form id="contactForm">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name" required aria-required="true">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required aria-required="true">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="message" rows="4" required aria-required="true"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4" role="contentinfo" aria-label="Información del pie de página">
+    <div class="container">
+        <p class="mb-1">© 2025 Universidad Continental - Filial Cusco</p>
+        <div class="d-flex">
+            <a href="https://www.facebook.com/ucontinental" class="text-light me-3" aria-label="Facebook de la Universidad Continental">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/" class="text-light me-3" aria-label="Twitter de la Universidad Continental">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com/" class="text-light" aria-label="Instagram de la Universidad Continental">
+                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scrip.js"></script>
+</body>
+</html>
